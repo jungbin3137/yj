@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/meta_main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
+    integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/js/index.js"></script>
+  <title>소방청 메타버스</title>
+
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- 로딩 섹션 -->
+    <div class="section sectiton_loading">
+      <div class="loading_overlay">
+        <div class="loading_wrap">
+          <div class="loading_content"></div>
+        </div>
+        <div class="loading_text_frame">
+          <div class="percent_frame">
+            <div class="loading_text" id="change_number">0</div>
+            <div class="loading_text">%</div>
+          </div>
+          <div class="loading_text"><p>로딩중</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="inner">
+      <!-- 로그인 -->
+      <div class="section login" style="display: none;">
+
+      </div>
+      <!-- 회원가입 -->
+      <div class="section join" style="display: none;">
+
+      </div>
+      <!-- 커스터 마이징 -->
+      <div class="section customizing" style="display: none;">
+
+      </div>
+
+      <!-- 듀토리얼 -->
+      <div class="section tutorial tutorial_move1">
+        <img class="tutorial_close_btn" src="/img/close_icon_big.png" alt="">
+        <img class="tutorial_1" src="/img/tutorial(1).png" alt="">
+        <img class="tutorial_2" src="/img/tutorial(2).png" alt="">
+        <img class="tutorial_3" src="/img/tutorial(3).png" alt="">
+        <img class="tutorial_4" src="/img/tutorial(4).png" alt="">
+        <img class="tutorial_5" src="/img/tutorial(5).png" alt="">
+        <img class="tutorial_6" src="/img/tutorial(6).png" alt="">
+      </div>
+
+      <!-- 튜토리얼2 -->
+      <div class="section tutorial2 tutorial_move2">
+        <div class="imglist">
+          <img src="/img/tutorial2_img(1).png" alt="">
+          <img src="/img/tutorial2_img(2).png" alt="">
+          <img src="/img/tutorial2_img(3).png" alt="">
+        </div>
+        <div class="calic">
+          <img src="/img/웅이.png" alt="">
+        </div>
+        <div class="textbox">
+          <h4>우리의 월드는 <span>‘장비전시공간’, ‘안전체험공간’, ‘안전교육공간’</span> 이 있어요.</h4>
+        </div>
+      </div>
+      <!-- 튜토리얼3 -->
+      <div class="section tutorial2 tutorial_move3" style="display: none;">
+        <div class="imglist">
+          <img src="/img/tutorial2_img(4).png" alt="">
+          <img src="/img/tutorial2_img(5).png" alt="">
+          <img src="/img/tutorial2_img(6).png" alt="">
+        </div>
+        <div class="calic">
+          <img src="/img/웅이.png" alt="">
+        </div>
+        <div class="text_box_wrap">
+          <div class=" textbox_img">
+
+          </div>
+          <div class="textbox_text">
+            <h4>‘장비전시공간’은 소방차와 소방헬기를 포함해 <br>
+              다양한 구조, 구급장비에 대해 안내하고 있어요.</h4>
+          </div>
+        </div>
+      </div>
+      <!-- 튜토리얼4 -->
+      <div class="section tutorial2 tutorial_move4" style="display: none;">
+        <div class="imglist">
+          <img src="/img/tutorial2_img(7).png" alt="">
+          <img src="/img/tutorial2_img(8).png" alt="">
+          <img src="/img/tutorial2_img(9).png" alt="">
+        </div>
+        <div class="calic">
+          <img src="/img/웅이.png" alt="">
+        </div>
+        <div class="text_box_wrap">
+          <div class=" textbox_img">
+
+          </div>
+          <div class="textbox_text">
+            <h4>‘안전체험공간’은 다양한 재난상황에 대하여<br>
+              가상 체험을 경험하실 수 있어요. </h4>
+          </div>
+        </div>
+      </div>
+      <!-- 튜토리얼5 -->
+      <div class="section tutorial2 tutorial_move5" style="display: none;">
+        <div class="imglist">
+          <img src="/img/tutorial2_img(10).png" alt="">
+          <img src="/img/tutorial2_img(11).png" alt="">
+          <img src="/img/tutorial2_img(12).png" alt="">
+        </div>
+        <div class="calic">
+          <img src="/img/웅이.png" alt="">
+        </div>
+        <div class="text_box_wrap">
+          <div class=" textbox_img">
+
+          </div>
+          <div class="textbox_text">
+            <h4>마지막 ‘안전교육공간’은 영상교육, 발표회의, 홍보전시 등 <br>
+              각종 소방안전에 대한 학습이 가능해요.</h4>
+          </div>
+        </div>
+      </div>
+      <!-- 튜토리얼6 -->
+      <div class="section tutorial2 tutorial_move6" style="display: none;">
+        <div class="calic1">
+          <img src="/img/영이 캐릭터.png" alt="">
+        </div>
+        <div class="calic2">
+          <img src="/img/웅이.png" alt="">
+        </div>
+        <div class="text_box_wrap">
+          <div class="textbox_text6">
+            <h4>우리 “소방월드”를 자유롭게 이용해 주시고 <br>
+              저는 각각의 공간에 먼저 가 있을게요. 안에서 또 만나요~</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- 인트로 -->
+      <div class="section intro" id="1">
+
+        <!-- 미니맵 -->
+        <div class="map">
+          <div class="map_inner">
+            <img class="map_title" src="../img/map_title_bg.png" alt="">
+            <a href="#_none" class="asd"><img class="map_scale_btn" src="../img/map_scale.png" alt=""></a>
+          </div>
+        </div>
+        <div class="map_scale_bg">
+          <a class="map_scale_down" href="#_none">
+            <img src="/img/map_scale_down.png" alt="">
+          </a>
+        </div>
+
+        <!-- icon list -->
+        <div class="main_icon">
+          <div class="main_icon_list">
+            <a href="#_none" class="world_map_btn"><img src="../img/worldmap.png" alt=""></a>
+            <a href="#_none" class="mypage_btn"><img src="../img/mypage.png" alt=""></a>
+            <a href="#_none" class="notice_btn"></a>
+            <a href="#_none" class="message_btn"></a>
+            <a href="#_none" class="menu_btn"></a>
+          </div>
+
+          <!-- 공지사항 -->
+          <div class="notice_popup">
+            <div class="popup_title">
+              <p>공지사항</p>
+              <img class="popup_close" src="../img/close_icon_b.png" alt="">
+            </div>
+            <div class="popup_text">
+              <p>플랫폼과 관련한 공지사항 및 최근 소식은 홈페이지를 통해 확인하실 수 있습니다.</p>
+              <a href="./main.html">
+                <p class="btn">홈페이지 가기 ></p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 월드맵 -->
+        <div class="word_outer_wrap">
+          <div class="worldmap">
+            <div class="img">
+              <a href="#_none"></a>
+              <a href="#_none" class="close_icon_big"><img src="/img/close_icon_big.png" alt=""></a>
+              <a href="#_none" class="map_btn1"><img src="/img/map_btn(1).png" alt=""></a>
+              <a href="/html/meta_game(1).html" class="map_btn2"><img src="/img/map_btn(2).png" alt="장비전시공간"></a>
+              <a href="#_none" class="map_btn3"><img src="/img/map_btn(3).png" alt="외부공간/메인으로 이동"></a>
+              <a href="#_none" class="map_btn4"><img src="/img/map_btn(4).png" alt=""></a>
+              <p>이동하실 공간을 클릭해주세요.</p>
+            </div>
+          </div>
+        </div>
+        <!-- 마이페이지-->
+        <div class="mypage">
+          <div class="character">
+            <img src="/img/character.png" alt="">
+          </div>
+          <div class="customizing">
+            <div class="title">
+              <p>커스터마이징</p>
+            </div>
+            <div class="Information">
+              <div class="text">
+                <p>닉네임 : <span>소방청멋쟁이</span></p>
+                <p>지 역 : <span>대구</span></p>
+              </div>
+              <div class="ranking">
+                <img src="/img/ranking.png" alt="">
+              </div>
+            </div>
+            <div class="itembox">
+              <div class="itemtab">
+
+              </div>
+              <div class="itemlist">
+
+              </div>
+              <div class="item_btnlist">
+                <div class="item_btn1"></div>
+                <div class="item_btn2"></div>
+                <div class="item_btn3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 채팅 -->
+        <div class="message_bg">
+          <div class="chat_bg">
+            <div class="chat_inner">
+              <p class="com_chat">닉네임1 : 안녕하세요. 이름을 알려주세요</p>
+            </div>
+          </div>
+          <div class="chat_input">
+            <input class="text_input" type="text" placeholder="이름을 입력해주세요.">
+            <button class="chat_btn">
+              <p>채팅</p>
+            </button>
+          </div>
+        </div>
+        <!-- 메뉴 -->
+        <div class="menu_bg">
+          <a href="#_non"><img class="menu_bg_close" src="/img/close_icon_b.png" alt=""></a>
+
+          <div class="sound">
+            <p>효과음</p>
+            <div class="slidecontainer">
+              <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+              <p class="soundvalue"> <span id="value"></span></p>
+            </div>
+          </div>
+          <div class="menu_btnlist">
+            <div class="btnzip">
+              <button class="secession_btn">
+                <p>회원탈퇴</p>
+              </button>
+              <button class="logout_btn">
+                <p>로그아웃</p>
+              </button>
+            </div>
+            <button class="end_btn">
+              <p>종료</p>
+            </button>
+          </div>
+        </div>
+        <!-- 캡쳐 -->
+        <div class="photo">
+          <a href="#_none"><img src="../img/photo.png" alt=""></a>
+        </div>
+
+        <!-- 감정표현 -->
+        <div class="emotion">
+          <img class="emotion_btn" src="../img/emotion.png" alt="">
+          <div class="emotion_list">
+            <ul>
+              <li><img src="../img/emotion(1).png" alt=""></li>
+              <li><img src="../img/emotion(2).png" alt=""></li>
+              <li><img src="../img/emotion(3).png" alt=""></li>
+              <li><img src="../img/emotion(4).png" alt=""></li>
+            </ul>
+            <ul>
+              <li><img src="../img/emotion(5).png" alt=""></li>
+              <li><img src="../img/emotion(6).png" alt=""></li>
+              <li><img src="../img/emotion(7).png" alt=""></li>
+              <li class="emotion_off"><img src="../img/emotion_off.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

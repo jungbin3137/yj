@@ -1,0 +1,237 @@
+@import url(../css/web_notice.css);
+
+.mypage_contents_wrap {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 20px 50px 20px;
+    display: flex;
+    flex-direction: column;
+    color: #3B3B3B;
+}
+
+.table_align {
+    display: flex;
+    gap: 40px;
+}
+
+.mypage_profile,
+.mypage_servey {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+}
+
+.mypage_profile p,
+.mypage_servey p {
+    text-align: left;
+    padding: 8px 5px;
+    font-size: 30px;
+    color: #3B3B3B;
+    font-weight: 600;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 0px 3px 12px #00000029;
+}
+
+.mypage_table_list {
+    font-size: 20px;
+}
+
+.mypage_table_list th {
+    background-color: #FCF8E5;
+}
+
+.mypage_table_list td {
+    height: 60px;
+    font-weight: 600;
+}
+
+.nickname {
+    padding: 5px 15px !important;
+}
+
+.mypage_table_list tr {
+    border-bottom: 1px solid #FF9016;
+}
+
+.mypage_table_list tr:last-child {
+    border-bottom: 0;
+}
+
+.mypage_table_list input {
+    width: 65%;
+    height: 40px;
+    font-size: 20px;
+    padding: 5px 5px;
+    margin-right: 10px;
+    border: 0;
+}
+
+.mypage_table_list input::placeholder {
+    font-size: 20px;
+    font-weight: 600;
+    color: #AAAAAA;
+}
+
+.mypage_btn {
+    padding: 10px 40px;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    background-color: #3B3B3B;
+}
+
+.btn_long {
+    width: 260px;
+}
+
+.mypage_btn_wrap {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0 0 0;
+}
+
+.mypage_btn_wrap button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 60px;
+    color: #fff;
+    border: 0;
+    border-radius: 30px;
+    background-color: #AAAAAA;
+    font-size: 20px;
+}
+
+
+/* 미디어 쿼리 CSS */
+@media screen and (max-width:1300px) {
+    .table_align {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mypage_profile,
+    .mypage_servey {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    .mypage_profile p,
+    .mypage_servey p {
+        font-size: 20px;
+    }
+
+    .mypage_table_list {
+        font-size: 15px;
+    }
+
+    .mypage_table_list input {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .mypage_table_list input::placeholder {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .mypage_btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .btn_long {
+        width: 200px;
+    }
+
+    .mypage_btn_wrap button {
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:499px) {
+    .mypage_contents_wrap {
+        padding: 80px 10px 50px 10px;
+    }
+
+    .mypage_profile p,
+    .mypage_servey p {
+        font-size: 16px;
+    }
+
+    .mypage_table_list {
+        font-size: 12px;
+    }
+
+    .mypage_table_list input {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .mypage_table_list input::placeholder {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .mypage_profile,
+    .mypage_servey {
+        padding: 0 5px;
+    }
+
+    .mypage_btn {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+
+    .btn_long {
+        width: 150px;
+    }
+
+    .mypage_btn_wrap button {
+        width: 180px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .contents_header_title {
+        font-size: 25px;
+    }
+
+    .mypage_profile p,
+    .mypage_servey p {
+        font-size: 14px;
+    }
+
+    .mypage_table_list,
+    .mypage_table_list input,
+    .mypage_table_list input::placeholder,
+    .mypage_btn {
+        font-size: 10px;
+    }
+
+    .btn_long {
+        width: 120px;
+    }
+
+    .mypage_btn_wrap button {
+        width: 140px;
+        font-size: 14px;
+    }
+}

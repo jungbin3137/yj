@@ -1,0 +1,729 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a,
+p {
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.568);
+
+}
+
+h4{
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: none;
+    color: #383636;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.185);
+    line-height: 50px;
+}
+
+.wrap {
+    width: 1920px;
+    height: 1080px;
+
+}
+
+
+.section {
+    width: 1920px;
+    height: 1080px;
+}
+
+/* 로딩 */
+/* .sectiton_loading {
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+    background: url(/img/loading_bg.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+/* 로딩 이벤트 */
+.loading_overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(/img/loading_bg.png);
+    z-index: 9999;
+    overflow: hidden;
+    /* display: none; */
+}
+.loading_wrap {
+    position: fixed;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: 50px;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+    overflow: hidden;
+}
+.loading_content {
+    width: 0;
+    background-color: yellow;
+    border: 2px solid white;
+    height: 100%;
+    border-radius: 25px;
+    transition: 5.5s;
+    box-shadow: 2px 2px 2px #1a131167;
+}
+.loading_text_frame {
+    position: fixed;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-60%,-50%);
+}
+.percent_frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+.loading_text {
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.185);
+    line-height: 50px;
+}
+
+/* 듀토리얼 */
+.tutorial {
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.tutorial_close_btn {
+    position: absolute;
+    top: 30px;
+    left: 930px;
+}
+
+.tutorial_1 {
+    position: absolute;
+    top: 30px;
+    left: 320px;
+}
+
+.tutorial_2 {
+    position: absolute;
+    bottom: 300px;
+    right: 550px;
+}
+
+.tutorial_3 {
+    position: absolute;
+    bottom: 300px;
+    left: 550px;
+}
+
+.tutorial_4 {
+    position: absolute;
+    bottom: 60px;
+    left: 680px;
+}
+
+.tutorial_5 {
+    position: absolute;
+    bottom: 60px;
+    right: 120px;
+}
+
+.tutorial_6 {
+    position: absolute;
+    top: 120px;
+    right: 50px;
+}
+/* 투토리얼2 */
+.tutorial2{
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.imglist{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+.calic{
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    z-index: 10;
+}
+
+.textbox{
+    position: absolute;
+    left: 100px;
+    bottom: 40px;
+    background: #FFFFF3;
+    height: 260px;
+    width: 1600px;
+    border-radius: 30px;
+    border: 6px solid #FFC400;
+    padding: 20px;
+}
+
+/* 투토리얼 3 */
+.text_box_wrap{
+    display: flex;
+    position: absolute;
+    left: 100px;
+    bottom: 40px;
+}
+.textbox_img{
+    width: 300px;    
+    background: #FFFFF3;
+    height: 260px;
+    width: 300px;
+    border-radius: 30px;
+    border: 6px solid #FFC400;
+}
+
+.textbox_text{
+    width: 700px;
+    background: #FFFFF3;
+    height: 260px;
+    width: 1200px;
+    border-radius: 30px;
+    border: 6px solid #FFC400;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.textbox_text6{
+    width: 700px;
+    background: #FFFFF3;
+    height: 260px;
+    width: 1200px;
+    border-radius: 30px;
+    border: 6px solid #FFC400;
+    margin-left: 300px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/*  */
+.calic1{
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    z-index: 10;
+}
+.calic2{
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    z-index: 10;
+}
+/* 인트로 */
+.intro {
+    background: url(../img/intro_bg.png);
+    position: relative;
+}
+
+/* 미니맵 */
+.map {
+    background: url(../img/map.png) no-repeat;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    width: 344px;
+    height: 296px;
+}
+
+.map_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.map_title {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.map_scale_btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.main_icon {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
+
+.main_icon_list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* 미니맵확대 */
+.map_scale_bg {
+    position: fixed;
+    z-index: 9999;
+    background: url(/img/map_scaleup.png);
+    width: 1404px;
+    height: 785px;
+    left: 300px;
+    top: 90px;
+    display: none;
+}
+
+.map_scale_down {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* 월드맵 */
+.word_outer_wrap {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.377);
+    display: none;
+}
+
+.worldmap {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1404px;
+    height: 785px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.worldmap .img {
+    width: 1404px;
+    height: 785px;
+    background: url(/img/map_world.png) no-repeat;
+    text-align: center;
+}
+
+.worldmap .img p {
+    margin-top: 50px;
+}
+
+.close_icon_big {
+    position: absolute;
+    z-index: 99999;
+    top: 30px;
+    right: 30px;
+}
+
+.map_btn1 {
+    position: absolute;
+    top: 300px;
+    left: 700px;
+}
+
+.map_btn2 {
+    position: absolute;
+    top: 400px;
+    right: 500px;
+}
+
+.map_btn3 {
+    position: absolute;
+    top: 500px;
+    left: 1000px;
+}
+
+.map_btn4 {
+    position: absolute;
+    top: 550px;
+    left: 600px;
+}
+
+/* 마이페이지 */
+.mypage {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    background: url(/img/mypage_Bg.png);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    display: none;
+}
+
+.customizing {}
+
+.Information {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customizing .title {
+    width: 830px;
+    height: 80px;
+    background: url(/img/customizing_title.png);
+}
+
+.customizing .title p {
+    font-size: 35px;
+    text-align: center;
+    line-height: 80px;
+}
+
+.item_btnlist {
+    width: 830px;
+    height: 700px;
+    background: url(/img/customizing_itembox.png);
+}
+
+/* 공지사항 */
+.notice_btn {
+    background: url(/img/notice.png);
+    width: 120px;
+    height: 120px;
+}
+
+.notice_btn.on {
+    background: url(/img/notice_off.png);
+}
+
+
+.notice_popup {
+    position: fixed;
+    width: 700px;
+    height: 370px;
+    background: url(/img/popup_bg\(1\).png);
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    display: none;
+}
+.notice_popup.on {
+    display: block;
+}
+
+
+.popup_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    /* padding: 30px 30px; */
+    width: 600px;
+}
+
+.popup_title p {
+    color: #1A1311;
+    text-shadow: none;
+    text-align: center;
+    padding-left: 30px;
+}
+.popup_title img {
+    margin-right: -40px;
+}
+.popup_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    padding: 20px 40px;
+
+}
+
+.btn {
+    color: white;
+    width: 343px;
+    height: 71px;
+    background: url(/img/popup_btn.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 채팅 */
+.message_bg {
+    position: fixed;
+    right: 20px;
+    top: 130px;
+    width: 714px;
+    height: 644px;
+    background: url(/img/message_bg.png);
+    padding: 40px;
+    display: none;
+}
+
+.message_bg.on {
+    display: block;
+}
+
+.chat_bg {
+    /* background: #1A1311; */
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+}
+
+.chat_inner {
+    width: 600px;
+    height: 460px;
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    overflow-y: scroll;
+}
+
+.chat_inner::-webkit-scrollbar {
+    display: none;
+}
+
+.com_chat {
+    text-align: left;
+    height: 40px;
+}
+
+.mychat {
+    text-align: right;
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(0 0 0 / 57%);
+    height: 40px;
+}
+
+.chat_input {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat_input input {
+    width: 500px;
+    height: 55px;
+    background: #ffffff6b;
+    border: 1px solid #FFFFFF;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+input::placeholder {
+    color: #1A1311;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.chat_input button {
+    width: 120px;
+    height: 60px;
+    background: url(/img/message_btn.png);
+    border: 0;
+    cursor: pointer;
+}
+
+.message_btn {
+    width: 120px;
+    height: 120px;
+    background: url(/img/message.png);
+}
+
+.message_btn.on {
+    background: url(/img/message_off.png);
+}
+
+/* 메뉴 */
+
+.menu_btn {
+    width: 120px;
+    height: 120px;
+    background: url(/img/menu.png);
+}
+
+.menu_btn.on {
+    background: url(/img/menu_off.png);
+}
+
+.menu_bg {
+    position: fixed;
+    left: 660px;
+    top: 140px;
+    width: 620px;
+    height: 520px;
+    background: url(/img/menu_bg.png);
+    display: none;
+}
+
+.menu_bg.on {
+    display: block;
+}
+
+.menu_bg_close {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+
+/* 효광음 사운드 */
+.sound {
+    position: absolute;
+    top: 110px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.sound p {
+    color: #1A1311;
+    text-shadow: none;
+}
+
+.slidecontainer {
+    display: flex;
+    gap: 10px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    /* 기본 CSS 스타일을 적용하지 않기 위해서 */
+    width: 451px;
+    /* 슬라이더 길이 */
+    height: 32px;
+    /* 슬라이더 두께 */
+    background: url(/img/soundbar.png);
+    /* 슬라이더 색상 */
+    outline: none;
+    /* 슬라이더 테두리 없이 */
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* 기본 CSS 스타일을 적용하지 않기 위해서 */
+    appearance: none;
+    /* 기본 CSS 스타일을 적용하지 않기 위해서 */
+    width: 28px;
+    /* 슬라이더 핸들 길이 */
+    height: 28px;
+    /* 슬라이더 핸들 높이 */
+    background: url(/img/soundtab.png);
+    /* 슬라이더 핸들 색상 */
+    cursor: pointer;
+    /* 슬라이더 핸들에 마우스를 갖다대면 포인터로 변경 */
+}
+
+#value {
+    color: #302D2C;
+    /* 슬라이더 값 */
+}
+
+.menu_btnlist {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 40px;
+    left: 53px;
+    /* width: 100%; */
+}
+
+.btnzip {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.menu_btnlist button {
+    border: none;
+    border-radius: 6px;
+}
+
+.secession_btn {
+    width: 260px;
+    height: 70px;
+    background: url(/img/menu_g.png);
+}
+
+.logout_btn {
+    width: 260px;
+    height: 70px;
+    background: url(/img/menu_b.png);
+
+}
+
+.end_btn {
+    width: 530PX;
+    height: 70PX;
+    background: url(/img/menu_r.png);
+
+}
+
+/* 캡쳐 */
+.photo {
+    position: fixed;
+    right: calc(50% - 59px);
+    /* 전체 가로넓이 - 자기가로값 - 50% */
+    bottom: 20px;
+}
+
+/* 감정표현 */
+.emotion {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.emotion_list {
+    position: absolute;
+    display: flex;
+    bottom: -5px;
+    right: -2px;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.267);
+    border: 2px solid white;
+    border-radius: 20px;
+    display: none;
+}
+
+.emotion_list ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+/*  */

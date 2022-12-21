@@ -1,0 +1,87 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a,
+p {
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.568);
+
+}
+
+h4{
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: none;
+    color: #383636;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.185);
+    line-height: 50px;
+}
+
+.wrap {
+    width: 1920px;
+    height: 1080px;
+
+}
+
+
+.section {
+    width: 100%;
+    height: 100vh;
+    background: url(/img/metagame\(1\)_1.png);
+
+}
+
+
+
+
+
+.metagame1{
+    /* width: 100%;
+    height: 100%; */
+}
+
+.exit_btn{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.metagame1_1{
+    display: flex;
+    position: fixed;
+    gap: 20px;
+    bottom: 20px;
+    right: 20px;
+}
+
+.textbox_img{
+    width: 300px;    
+    background: #FFFFF3;
+    height: 160px;
+    width: 300px;
+    border-radius: 30px;
+    border: 6px solid #FFC400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textbox_text{
+    width: 700px;
+    background: #FFFFF3;
+    height: 160px;
+    width: 1200px;
+    border-radius: 30px;
+    border: 6px solid #FFC400;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+

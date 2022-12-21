@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web_login</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/web_notice.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/common.js"></script>
+</head>
+
+<body>
+    <div class="header_top_section"></div>
+    <div class="header">
+        <div class="header_wrap">
+            <div class="header_logo">
+                <div class="header_logo_white">
+                    <a href="../html/main.html"><img src="../img/소방청로고.png"></a>
+                </div>
+                <div class="header_logo_black">
+                    <a href="../html/main.html"><img src="../img/소방청로고_블랙.png"></a>
+                </div>
+            </div>
+            <div class="header_menus">
+                <div class="link_wrap">
+                    <a class="" href="../html/web_notice.html">공지사항</a>
+                    <div class="bottom_line"></div>
+                </div>
+                <div class="link_wrap">
+                    <a class="" href="../html/web_community.html">커뮤니티</a>
+                    <div class="bottom_line"></div>
+                </div>
+                <div class="link_wrap">
+                    <a class="text_yellow" href="../html/web_survey.html">설문조사</a>
+
+                    <div class="bottom_line"></div>
+                </div>
+                <div class="link_wrap">
+                    <a class="" href="../html/web_mypage.html">마이페이지</a>
+                    <div class="bottom_line"></div>
+                </div>
+                <div class="link_wrap">
+                    <a class="" href="../html/web_platform.html">플랫폼 소개</a>
+                    <div class="bottom_line"></div>
+                </div>
+            </div>
+
+            <div class="sidebar_section"></div>
+
+        </div>
+    </div>
+    <div class="contents_header_wrap">
+        <div class="contents_header">
+            <div class="contents_header_title">
+                로그인
+            </div>
+        </div>
+    </div>
+    <div class="login_form_wrap">
+        <div class="login_form">
+            <div class="login_title">
+                회원로그인
+            </div>
+            <div class="login_input_wrap">
+                <div class="login_id">
+                    <input type="text" placeholder="이메일">
+                </div>
+                <div class="login_password_wrap">
+                    <i class="xi-eye"></i>
+                    <!-- <i class="xi-eye-off"></i> -->
+                    <input type="password" placeholder="비밀번호">
+                    <div class="warning">불일치 합니다.</div>
+                    <div class="sign_up">
+                        <button id="modal_btn">회원가입</button>
+                    </div>
+                </div>
+                <div class="login_btn">
+                    <button>로그인</button>
+                </div>
+            </div>
+            <div class="easy_login_title">
+                -간편 로그인-
+            </div>
+            <div class="easy_login_btn_wrap">
+                <div class="easy_login_btn">
+                    <div class="kakao">
+                        <img src="../img/kakao.png" alt="카카오로그인">
+                    </div>
+                    <div class="naver">
+                        <img src="../img/naver.png" alt="네이버로그인">
+                    </div>
+                    <div class="google">
+                        <img src="../img/google.png" alt="구글로그인">
+                    </div>
+                    <div class="apple">
+                        <img src="../img/apple.png" alt="애플로그인">
+                    </div>
+                </div>
+                <div class="digital_login">
+                    <img src="../img/onepass_login.png" alt="디지털원패스로그인">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 회원가입 창 모달 -->
+    <div class="modal">
+        <div class="modal_content_wrap modal_wrap">
+            <div class="modal_content">
+                <div class="modal_content_title">
+                    <span>회원가입</span>
+                    <div class="modal_close" id="close">
+                        <img src="../img/Icon material-close.png" alt="닫기">
+                    </div>
+                </div>
+                <div class="modal_content_body">
+                    <div class="modal_login_input">
+                        <p>이메일</p>
+                        <div class="login_id">
+                            <input type="text" placeholder="이메일">
+                            <button>중복확인</button>
+                        </div>
+                        <div class="modal_login_password_wrap">
+                            <p>비밀번호</p>
+                            <i class="xi-eye" id="test"></i>
+                            <!-- <i class="xi-eye-off"></i> -->
+                            <input type="password" placeholder="비밀번호">
+                            <div class="password_confirm">
+                                <p>비밀번호 확인</p>
+                                <i class="xi-eye"></i>
+                                <!-- <i class="xi-eye-off"></i> -->
+                                <input type="password" placeholder="비밀번호">
+                                <div class="modal_warning">불일치 합니다.</div>
+                            </div>
+                        </div>
+                        <div class="modal_btn">
+                            <div class="btn_confirm">
+                                <button>가입완료</button>
+                            </div>
+                            <div class="btn_cancle">
+                                <button>취소</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_section"></div>
+</body>
+
+</html>
+
+<script>
+
+</script>

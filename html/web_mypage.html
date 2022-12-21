@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web_mypage</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/web_mypage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/common.js"></script>
+</head>
+
+<body>
+    <div class="header_top_section"></div>
+    <div class="header">
+        <div class="header_wrap">
+            <div class="header_logo">
+                <div class="header_logo_white">
+                    <a href="../html/main.html"><img src="../img/소방청로고.png"></a>
+                </div>
+                <div class="header_logo_black">
+                    <a href="../html/main.html"><img src="../img/소방청로고_블랙.png"></a>
+                </div>
+            </div>
+            <div class="header_menus">
+                <div class="link_wrap">
+                    <a class="" href="../html/web_notice.html">공지사항</a>
+                    <div class="bottom_line"></div>
+                </div>
+                <div class="link_wrap">
+                    <a class="" href="../html/web_community.html">커뮤니티</a>
+                    <div class="bottom_line"></div>
+                    <div class="bottom_line"></div>
+                </div>
+                <div class="link_wrap">
+                    <a class="" href="../html/web_survey.html">설문조사</a>
+                    <div class="bottom_line"></div>
+                </div>
+                <div class="link_wrap">
+                    <a class="text_yellow" href="../html/web_mypage.html">마이페이지</a>
+                    <div class="line_selected"></div>
+                </div>
+                <div class="link_wrap">
+                    <a class="" href="../html/web_platform.html">플랫폼 소개</a>
+                    <div class="bottom_line"></div>
+                </div>
+            </div>
+
+            <div class="sidebar_section"></div>
+
+        </div>
+    </div>
+    <div class="contents_header_wrap">
+        <div class="contents_header">
+            <div class="contents_header_title">
+                마이페이지
+            </div>
+        </div>
+    </div>
+    <div class="mypage_contents_wrap">
+        <div class="table_align">
+            <div class="mypage_profile">
+                <p>프로필 정보</p>
+                <table class="mypage_table_list">
+                    <colgroup>
+                        <col width="20%">
+                        <col width="80%">
+                    </colgroup>
+                    <tr>
+                        <th>이메일</th>
+                        <td>hyunlaezzang@naver.com</td>
+                    </tr>
+                    <tr>
+                        <th>닉네임</th>
+                        <td class="nickname"> <input type="text" placeholder="닉네임을 등록해주세요."> <button class="mypage_btn">등록하기</button></td>
+                    </tr>
+                    <tr>
+                        <th>로그인 계정</th>
+                        <td>카카오 연동</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="mypage_servey">
+                <p>설문 기록</p>
+                <table class="mypage_table_list">
+                    <colgroup>
+                        <col width="20%">
+                        <col width="80%">
+                    </colgroup>
+                    <tr>
+                        <th>참여 일자</th>
+                        <td>2022 - 11 - 02</td>
+                    </tr>
+                    <tr>
+                        <th>작성 상태</th>
+                        <td>설문 완료</td>
+                    </tr>
+                    <tr>
+                        <th>결과 보기</th>
+                        <td><button class="mypage_btn btn_long">응답 내용 보기</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="mypage_btn_wrap">
+            <button>회원탈퇴</button>
+        </div>
+    </div>
+
+    <div class="footer_section"></div>
+</body>
+
+</html>

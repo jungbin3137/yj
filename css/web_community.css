@@ -1,0 +1,506 @@
+@import url(../css/web_notice.css);
+
+
+/* 탭 버튼 CSS */
+.tab_menu {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab {
+    display: flex;
+}
+
+.tab_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 220px;
+    height: 60px;
+    color: #000;
+    font-size: 20px;
+    border: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.tab_inner {
+    display: none;
+}
+
+.tab_item.active_tab {
+    background: #FF9016;
+    color: #fff;
+}
+
+.tab_inner.active_tab {
+    display: block;
+}
+
+
+.community_title {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1400px;
+    justify-content: center;
+    padding: 30px 0 0 0;
+    color: #3B3B3B;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.table_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table_btn_wrap {
+    max-width: 1400px;
+    display: flex;
+    justify-content: right;
+}
+
+.table_btn_wrap a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-radius: 30px;
+}
+
+
+/* 체크박스 CSS */
+.check_box_wrap {
+    display: flex;
+    gap: 5px;
+    font-size: 16px;
+}
+
+/* 기본 체크박스 숨기기 */
+.chk_box input[type="checkbox"] {
+    display: none;
+}
+
+.chk_box {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    user-select: none;
+}
+
+/* 선택되지 않은 체크박스 스타일 꾸미기 */
+.on {
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border: 1px solid #3b3b3b;
+    border-radius: 2px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+
+/* 선택된 체크박스 스타일 꾸미기 */
+.chk_box input[type="checkbox"]:checked+.on {
+    background: #FF9016;
+}
+
+.on:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.chk_box input[type="checkbox"]:checked+.on:after {
+    display: block;
+}
+
+.on:after {
+    width: 5px;
+    height: 9px;
+    border: solid #fff;
+    border-width: 0 3px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    left: 4px;
+    top: 1px;
+}
+
+
+/* 커뮤니티 게시글 작성 CSS */
+.community_contents_write_wrap {
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.write_title {
+    color: #3B3B3B;
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.community_contents_write {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.community_contents_write input,
+.community_contents_write textarea {
+    width: 100%;
+    height: 60px;
+    padding: 5px 10px;
+    border: 0;
+    font-size: 16px;
+    border-top: 2px solid #3B3B3B;
+    border-bottom: 1px solid #3B3B3B;
+    background-color: #F5F5F5;
+}
+
+
+
+.community_contents_write_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.community_contents_write_title_sub_2 {
+    padding: 10px 0;
+}
+
+.community_contents_write_title_sub p,
+.community_contents_write_title_spell p,
+.community_contents_write_title_sub_2 p,
+.community_contents_write_file {
+    color: #3B3B3B;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.community_contents_write_file {
+    display: flex;
+    justify-content: space-between;
+}
+
+.community_contents_write_title_spell span {
+    color: #3B3B3B;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.community_contents_write input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.files_data:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 2px solid #3B3B3B;
+}
+
+.files_data:last-child {
+    border-bottom: 1px solid #3B3B3B;
+}
+
+.community_contents_write .file,
+.file_btn_wrap {
+    width: 100%;
+    height: 60px;
+    padding: 5px 10px;
+    border: 0;
+    color: #3B3B3B;
+    font-size: 14px;
+    border-top: 2px solid #3B3B3B;
+    border-bottom: 1px solid #3B3B3B;
+    background-color: #F5F5F5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: auto;
+}
+
+.file_wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.file_wrap .file_data {
+    display: flex;
+    align-items: center;
+    border: 0;
+}
+
+.files_data .files_input_wrap {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
+    border: 0;
+    color: #3B3B3B;
+    font-size: 14px;
+    background-color: #F5F5F5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: auto;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.community_contents_write label,
+.files button,
+.file_btn_wrap_data button {
+    width: 160px;
+    height: 40px;
+    top: 15px;
+    right: 10px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+    border: 0;
+    border-radius: 5px;
+    background-color: #333333;
+    cursor: pointer;
+}
+
+.file_btn_wrap,
+.file_btn_wrap_data {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: right;
+}
+
+.file_btn_wrap button,
+.file_btn_wrap_data button {
+    background-color: #ff1616;
+}
+
+.modal_btn button {
+    width: 220px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.file_label_wrap label {
+    padding: 10px 60px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+    border: 0;
+    border-radius: 5px;
+    background-color: #333333;
+    cursor: pointer;
+}
+
+
+/* 커뮤니티 상세보기 CSS */
+.community_btn_wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.files_gap {
+    display: flex;
+    gap: 10px;
+    padding: 5px 0;
+}
+
+.btn {
+    display: flex;
+    justify-content: right;
+    padding: 30px 0 0 0;
+    gap: 10px;
+}
+
+.btn button {
+    width: 140px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.btn_cancle button {
+    background-color: #AAAAAA;
+}
+
+
+/* 커뮤니티 문의게시판 CSS */
+.reply_title {
+    padding: 20px 0 10px 0;
+    color: #3B3B3B;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.reply_contents {
+    width: 100%;
+    padding: 30px 20px;
+    color: #3B3B3B;
+    font-size: 16px;
+    background-color: #F5F5F5;
+    border-top: 2px solid #3B3B3B;
+    border-bottom: 1px solid #3B3B3B;
+}
+
+
+/* 미디어 쿼리 CSS */
+@media screen and (max-width:900px) {
+    .tab_item {
+        width: 180px;
+        font-size: 18px;
+    }
+
+    .community_title {
+        font-size: 35px;
+    }
+
+    .table_btn_wrap a {
+        width: 180px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .selectbox_wrap_total {
+        padding: 30px 0 30px 0;
+    }
+
+    .tab_item {
+        width: 150px;
+        font-size: 16px;
+    }
+
+    .community_title {
+        font-size: 28px;
+    }
+
+    .community_tab a {
+        width: 100px;
+        font-size: 14px;
+    }
+
+    .table_btn_wrap {
+        padding: 0 0 20px 0;
+    }
+
+    .write_title {
+        font-size: 28px;
+    }
+
+    .community_contents_write label,
+    .files button {
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .modal_btn button {
+        width: 120px;
+        font-size: 16px;
+        height: 50px;
+    }
+
+    .file_btn_wrap {
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width:499px) {
+    .contents_detail_wrap {
+        padding: 40px 10px;
+    }
+
+    .community_title {
+        font-size: 20px;
+    }
+
+    .tab_item {
+        width: 120px;
+    }
+
+    .reply_contents {
+        font-size: 12px;
+    }
+
+    .community_contents_write input,
+    .community_contents_write textarea {
+        border-radius: 0;
+    }
+
+    .btn {
+        justify-content: center;
+    }
+
+    .btn button {
+        width: 100px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .community_title {
+        font-size: 20px;
+    }
+
+    .tab_item {
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .detail_connect_link {
+        gap: 2px;
+    }
+
+    .write_title {
+        font-size: 20px;
+    }
+
+    .detail_connect_link a,
+    .detail_title,
+    .detail_sub_title,
+    .detail_contents,
+    .detail_files,
+    .pre_wrap,
+    .next_wrap,
+    .date,
+    .reply_contents {
+        font-size: 10px;
+    }
+
+    .btn button {
+        width: 100px;
+        height: 40px;
+        font-size: 12px;
+    }
+}

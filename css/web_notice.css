@@ -1,0 +1,445 @@
+body {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+textarea {
+
+}
+
+
+/* Select box CSS */
+.selectbox_wrap_total {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 10px 30px 30px;
+    gap: 30px;
+}
+
+.selectbox_wrap {
+    display: flex;
+    gap: 10px;
+}
+
+.selectbox_wrap select {
+    width: 150px;
+    height: 40px;
+    padding: 0 10px 0 10px;
+    font-size: 11pt;
+    color: #707070;
+    border-radius: 5px;
+    border: 1px solid #F4C323;
+    background: url(../img/Icon\ ionic-ios-arrow-down.png) no-repeat 94% 50%/14px 8px;
+}
+
+.select_text_box {
+    width: 250px;
+    height: 40px;
+    padding: 2px 10px;
+    border-radius: 5px;
+    border: 1px solid #F4C323;
+}
+
+.selectbox_wrap img {
+    padding-right: 3px;
+    vertical-align: text-bottom;
+}
+
+.select_btn_wrap button {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.btn_search,
+.btn_reset {
+    width: 100px;
+    height: 40px;
+    color: #3B3B3B;
+    font-size: 16px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px;
+    background-color: #FDD000;
+}
+
+.btn_reset {
+    color: #fff;
+    background-color: #3B3B3B;
+}
+
+
+/* 테이블 표 CSS */
+.contents_table_wrap_total {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px 200px 20px;
+}
+
+.table_display_on {
+    display: none;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.total {
+    font-size: 14px;
+    padding: 3px 0;
+}
+
+.contents_table_wrap {
+    max-width: 100%;
+    padding-bottom: 25px;
+}
+
+.contents_table {
+    display: flex;
+    flex-direction: column;
+}
+
+.border_bottom {
+    border-bottom: 1px solid #707070;
+}
+
+.table_list tr:hover {
+    background-color: #FCF8E5;
+}
+
+.table_list th {
+    font-size: 16px;
+    height: 50px;
+    border-top: 1px solid #707070;
+    border-bottom: 2px solid #707070;
+    background-color: #fff;
+}
+
+.table_list tr,
+.table_list td {
+    font-size: 16px;
+    height: 35px;
+    padding: 20px 8px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+tr:last-child {
+    border-bottom: 1px solid #707070;
+}
+
+.table_list img {
+    cursor: pointer;
+}
+
+
+/* 푸터위 이미지 CSS */
+.table_bottom_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin-bottom: -3px;
+}
+
+.table_bottom_image img {
+    max-width: 100%;
+}
+
+
+/* 푸터 색깔 CSS */
+.footer {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    bottom: 0;
+    color: #fff;
+    border-top: 1px solid #707070;
+}
+
+.footer_top_left a,
+.footer_middle,
+.firestaion_select,
+.reservation_page_select {
+    color: #707070;
+}
+
+
+/* 공지사항 상세보기 CSS */
+.contents_detail_wrap {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.detail_connect_link {
+    display: flex;
+    align-items: center;
+    padding: 0 0 30px 0;
+    gap: 3px;
+}
+
+.detail_connect_link a {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.detail_connect_link a:last-child {
+    color: #FF9016;
+}
+
+.detail_title {
+    display: flex;
+    padding: 15px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    justify-content: space-between;
+    border-top: 2px solid #3B3B3B;
+    border-bottom: 1px solid #000;
+}
+
+.detail_sub_title {
+    display: flex;
+    gap: 15px;
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 1px solid #000;
+}
+
+.views,
+.writer {
+    display: flex;
+    gap: 5px;
+}
+
+.detail_contents {
+    width: 100%;
+    height: 100%;
+    padding: 20px 15px;
+    border-bottom: 1px solid #000;
+}
+
+.detail_contents textarea {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    border: 0;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+
+
+.detail_files {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid #3B3B3B;
+}
+
+.detail_files a {
+    color: #000;
+    text-decoration: underline;
+}
+
+
+.files {
+    display: flex;
+    gap: 0;
+    padding: 5px 0;
+    position: relative;
+}
+
+.file_delete_btn {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 170px;
+}
+
+.file_delete_btn button {
+    background-color: #ff1616 !important;
+}
+
+.list_btn_wrap {
+    display: flex;
+    padding: 80px 0;
+    justify-content: center;
+}
+
+.list_btn_wrap a {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    color: #FFF;
+    font-size: 16px;
+    text-align: center;
+    border: 0;
+    border-radius: 50px;
+    background-color: #FF9016;
+}
+
+.pre_and_next_wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.pre_and_next_wrap a {
+    color: #000;
+}
+
+.pre_wrap,
+.next_wrap {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 0 10px 0 0;
+    justify-content: space-between;
+    border-top: 1px solid #3b3b3b;
+    border-bottom: 1px solid #707070;
+}
+
+.next_wrap {
+    border-top: 0;
+}
+
+.date {
+    font-size: 14px;
+}
+
+.pre,
+.next {
+    display: flex;
+    gap: 10px;
+    padding: 10px 10px;
+}
+
+.next {
+    border-top: 0;
+}
+
+
+/* 미디어 쿼리 CSS */
+@media screen and (max-width:1024px) {
+    .selectbox_wrap_total {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .helicopter {
+        display: none;
+    }
+
+    .table_bottom_image img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .table_display {
+        display: none;
+    }
+
+    .table_display_on {
+        display: block;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .selectbox_wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:499px) {
+    .contents_header_title {
+        font-size: 30px;
+    }
+
+    .contents_table_wrap_total {
+        padding: 0 20px 100px 20px;
+    }
+
+    .detail_connect_link a,
+    .detail_title,
+    .detail_sub_title,
+    .detail_contents,
+    .detail_files,
+    .pre_wrap,
+    .next_wrap,
+    .date {
+        font-size: 12px;
+    }
+
+    .list_btn_wrap a {
+        font-size: 14px;
+    }
+
+    .select_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .table_list tr,
+    .table_list td {
+        font-size: 12px;
+    }
+
+    .pagination a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .selectbox_wrap_total {
+        padding: 30px 0 30px 0;
+    }
+
+    .selectbox_wrap select {
+        height: 35px;
+    }
+
+    .select_text_box {
+        height: 35px;
+    }
+
+    .btn_search,
+    .btn_reset {
+        font-size: 14px;
+    }
+
+    .total {
+        font-size: 12px;
+    }
+
+    .pagination {
+        gap: 2px;
+    }
+
+    .pagenation a {
+        font-size: 10px;
+        padding: 3px 5px;
+    }
+
+    .contents_table_wrap_total {
+        padding: 0 20px 30px 20px;
+    }
+}
